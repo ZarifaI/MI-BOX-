@@ -1,0 +1,870 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    background-image: url('pictures/MI-BOX_herobackground1.png');
+    background-size: 100%;
+    height: 100%;
+    background-position: center 0px; 
+    background-repeat: no-repeat; 
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adjusted shadow values */
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar img {
+    height: 55px;
+    width: 200px;
+    margin-top: 8px;
+    margin-left: 40px;
+}
+
+.left-section {
+    position: relative;
+    background-color: #fff; 
+    padding: 10px;
+    height: 75px;
+    width: 57.3%;
+ }
+
+
+.right-section {
+    position: relative;
+    background-color: #333; 
+    display: flex;
+    width: 43.3%; 
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff; 
+    height: 75px; 
+    padding-right: 10px;
+}
+
+
+.estimate {
+    display: flex;
+    align-items: center;
+}
+.estimate i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.estimate-text {
+    font-size: 20px;
+    margin-right: 10px; 
+}
+
+.phone-number a {
+    margin-right: 130px; 
+    color: #FFDD00; 
+    font-size: 20px;
+}
+
+.contact .logo{
+    margin-top: 110px;
+    margin-left: 50px;
+    width: 200px;
+    height: 50px;
+}
+
+.contact .content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.contact .content ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #fffafa;
+}
+
+.contact .content ul li i {
+    margin-right: 10px;
+    color: #FFA500; 
+}
+
+
+.contact .quoteForm {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 43%; 
+    height: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #FFDD00;}
+
+.contact .quoteForm  h1 {
+    font-size: 30px; 
+}
+
+.contact .quoteForm .inputBox {
+    position: relative;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.contact .quoteForm .inputBox input{
+    width: 100%;
+    background-color: transparent;
+    height: 45px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+}
+
+.contact .quoteForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #333;
+}
+
+.contact .quoteForm .inputBox input:focus ~ span,
+.contact .quoteForm .inputBox input:valid ~ span {
+    color: #000000;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.main .mi-box {
+    margin-top: 100px; 
+    margin-left: 50px;    
+    font-size: 80px; 
+    background: linear-gradient(90deg, #FFDD00 0%, #FFA500 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.main .moving-storage {
+    margin-left: 50px;
+    font-size: 39px; 
+    color: #ffffff;
+}
+
+
+.contact .quoteForm .inputBox input[type="submit"] {
+    padding: 10px 20px;
+    background: #333; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    position: relative; 
+    margin-top: 20px; 
+    outline: none;
+}
+
+.contact .quoteForm .inputBox input[type="submit"]:hover {
+    background:  #333;
+    transform: scale(1.05);
+}
+
+.quote {
+    width: 100%;
+    height: 100vh;
+    margin-top: 232px;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-color: #ffffff; 
+  }
+  
+  .quote img{
+    width: 25%;
+    padding-bottom: 20px;
+    margin-top: 1%;
+    margin-bottom: 20px;
+  }
+
+  .quote h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .quote hr {
+    height: 10px;
+    background-color: #FFDD00;
+    border: none; /* Remove border lines */
+    border-radius: 20px;
+    width: 75px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .quote p {
+    font-size: 30px;
+    font-weight: 450;
+  }
+
+  .quote ul li {
+    font-size: 30px;
+    border-top: 40px;
+    font-weight: 450;
+  }
+
+.custom-list {
+    list-style: none; /* Remove default list styles */
+    padding-left: 0; /* Remove default padding */
+}
+
+.custom-list li {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 10px; /* Add space between list items */
+    margin-left: 200px;
+}
+
+.list-number {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    line-height: 40px; /* Center the number vertically */
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-right: 20px; /* Add space between the number and text */
+    font-weight: bold;
+}
+
+/* Center the content within each list item */
+.custom-list li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cards hr {
+    height: 10px;
+    background-color: #FFDD00;
+    border: none; /* Remove border lines */
+    border-radius: 20px;
+    width: 75px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333; /* Adjust padding as needed */
+    color: #000000; /* Text color */
+}
+
+.cards h1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cards h2 {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+
+.cards h4 {
+    font-weight: bold;
+    line-height: 1.6;
+}
+.cards p {
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    margin: 50px 150px 150px 150px;
+}
+
+.box {
+    width: 260px;
+    height: 400px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FFDD00; /* Yellow box color */
+    margin: 10px 5px; /* Adjust horizontal and vertical margin */
+    transition: transform 0.3s ease-in-out; /* Adding transition for smooth effect */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Scale up the box when hovered */
+    background-image: linear-gradient(45deg, #FFA500, #FFDD00); /* Gradient background on hover */
+}
+
+.box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+.additional-text {
+    margin-bottom: 20px;
+    color: #ffffff;
+    margin-top: -100px; /* Adjust this value to move the text closer */
+}
+.additional-text h1{
+    font-size: 50px;
+    font-weight: 600
+}
+.additional-text p {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.additional-text p span {
+    color: #FFDD00;
+}
+
+.button .btn{
+    text-align: center;
+    border: 1px solid  #FFDD00;
+    background: none;
+    color: #fffefe;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.button .btn:hover{
+    color: #FFA500;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.benefits img {
+    width: 200px;
+    height: auto; 
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 0;
+    background: #FFDD00;
+}
+
+.benefit {
+    margin: 1px 1px 1px 1px;
+    flex: 0 1 270px; /* Set a fixed width for the boxes */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid  #FFDD00;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefit h2 {
+    font-size: 24px;
+    margin-bottom: 2px; /* Adjust the margin between h2 and p */
+}
+
+.benefit p {
+    font-size: 16px;
+    margin-bottom: 2px; /* Adjust the margin between paragraphs */
+}
+
+
+.how-it-works {
+    display: flex;
+    background: #ffffff;
+    padding-bottom: 60px;
+    
+}
+
+.how-it-works img {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 400px;/* Set the maximum width and height to control image size */
+     /* Maintain aspect ratio */
+    height: 100%;
+    margin-left: 10%; /* Adjust the margin as needed */
+    margin-right: 0%;
+}
+
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+
+.section-title {
+    margin-top: 50px; /* Adjust top margin as needed */
+    margin-left: 150px;
+    font-size: 40px;
+    text-align: center; /* Center align text */
+}
+.section-text h1 {
+    font-size: 50px;
+}
+
+.text-container h2{
+    font-size: 30px;
+    font-weight: normal;
+    margin-right: 100px;
+    padding-left: 150px;
+}
+.how-it-works .steps-wrapper {
+    padding-left: 130px; /* Adjust the left padding to move the list further left */
+    padding-bottom: 50px;
+}
+
+.steps-wrapper hr {
+    height: 10px;
+    background-color: #FFDD00;
+    border: none; /* Remove border lines */
+    border-radius: 20px;
+    width: 75px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.steps {
+    list-style-type: none;
+    padding: 1px;
+    padding-top: 10px;
+}
+
+.steps li {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 1px;
+}
+
+.steps li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.steps li p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+.button2 {
+    text-align: center;
+    margin-top: -50px;
+    padding-left: 150px;
+
+}
+
+.btn2 {
+    border: 1px solid #FFDD00;
+    background: linear-gradient(to bottom, #FFDD00, #FFA500);
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.btn2:hover {
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #FFDD00, #FFA500);
+}
+
+.faq {
+    text-align: center;
+    padding: 50px 0;
+    background: #ffffff;
+}
+.faq .question .answer {
+    display: none; 
+}
+
+.faq .question h3 {
+    cursor: pointer; 
+}
+
+.faq h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #000000;
+    
+}
+.faq h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000000;
+    
+}
+.faq p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+.faq hr {
+    height: 10px;
+    background-color: #FFDD00;
+    border: none; /* Remove border lines */
+    border-radius: 20px;
+    width: 75px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.questions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+}
+
+.question {
+    border-radius: 5px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow values */
+}
+
+
+.question h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.question p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.question:last-child {
+    margin-bottom: 0;
+}
+
+
+.plus-sign,
+.minus-sign {
+    position: absolute;
+    top: 50%;
+    right: 60px; 
+    transform: translateY(-50%);
+    font-weight: normal; 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.minus-sign {
+    display: none; 
+}
+
+.faq .question .answer {
+    display: none;
+}
+
+.faq .question .answer[style='display: block;'] + h3 .plus-sign {
+    display: none;
+}
+
+.faq .question .answer[style='display: block;'] + h3 .minus-sign {
+    display: inline-block;
+}
+
+.rotate {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.faq .question h3 {
+    position: relative;
+    padding-right: 40px; 
+}
+
+
+ .contactForm {
+    position: relative;
+    background: #FFDD00;
+    width: 43%; 
+    height: 40%;
+    padding: 52px 100px ;
+
+}
+
+.container {
+    display: flex;
+}
+
+.container {
+    background-image: url('pictures/9.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.contactForm h1 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.inputBox label {
+    display: block;
+    height: 8px;
+    font-size: 20px; /* Adjust the font size */
+    font-weight: 500;
+    color: #000000; /* Adjust the color */
+    margin-bottom: 5px; /* Adjust the bottom margin */
+  }
+  
+/* Toggle (Checkbox) styles */
+
+.inputBox select {
+    width: 100%;
+    background: #FFDD00;
+    padding-top: 1px, 1px, 1px, 1px;
+    font-size: 1.1em;
+    margin: 11px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    
+  }
+  
+  /* Styling for dropdown arrow */
+  .inputBox select::after {
+    content: '\25BC';
+    background: #FFDD00;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  
+.contactForm h2 {
+    font-size: 20px;
+    height: 15px;
+    color: #000000;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Basic styling for the serviceNeeded select dropdown */
+.services select {
+    width: 100%;
+    background: #FFDD00;
+    padding: 1px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  
+  .services select:focus {
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  
+  /* Styling for the dropdown arrow */
+  .services select::after {
+    content: '\25BC';
+    background: #FFDD00;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+
+.contactForm .inputBox {
+    position: relative;
+    background: #FFDD00;
+    width: 100%;
+    height: 20%;
+    margin-top: 10px;
+    padding: 1px 0;
+}
+
+.contactForm .inputBox input{
+    width: 100%;
+    background: #FFDD00;
+    padding: 3px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    height: 25px;
+    pointer-events: none;
+    padding: 1px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #666;
+    transition: 0.5s;
+}
+
+.contactForm .inputBox input:focus ~span,
+.contactForm .inputBox input:valid ~span{
+color: #333;
+font-size: 0.9em;
+transform: translateY(-20px);
+}
+
+
+/* Styles for the dropdown in .storageSection */
+.storageSection select {
+    width: 100%;
+    background: #FFDD00;
+    padding: 1px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    appearance: none; /* Remove default arrow on some browsers */
+    -webkit-appearance: none; /* Remove default arrow on Safari */
+  }
+  
+  /* Styling for the dropdown arrow */
+  .storageSection select::after {
+    content: '\25BC';
+    background: #FFDD00;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  
+  .contactForm .inputBox input[type="submit"] {
+    padding: 10px 20px;
+    background: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    position: relative;
+    margin-top: 20px;
+    outline: none;
+}
+
+.contactForm .inputBox input[type="submit"]:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+/* Example CSS for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+}
+
+footer div {
+    max-width: 100vh;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
